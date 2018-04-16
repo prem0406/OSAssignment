@@ -1,2 +1,0 @@
-# OSAssignment
-OS CA3

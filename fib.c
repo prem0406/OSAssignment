@@ -20,6 +20,7 @@ int main()
 	{
 		printf("%d  ",*(arr+i));
 	}
+	printf("\n");
 		
 }
 
@@ -29,11 +30,11 @@ void *fib(void *len)
 	int i=0;
 	int j=1;
 	int temp;
-	*arr=i;
-	*(arr+1)=j;
+	*arr=i;	//fib0
+	*(arr+1)=j;//fib1
 	for(int k=2;k<n;k++)
 	{
-		temp=j+i;
+		temp=j+i;//fibn=fibn-1 +fibn-2
 		i=j;
 		j=temp;
 		*(arr+k)=temp;
